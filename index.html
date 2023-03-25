@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya Sans SC">
     <link rel="stylesheet" href="styles.css">
     <title>Medicine Manager</title>
 </head>
@@ -31,8 +32,42 @@
 
     </header>
 
+    <section id="sec-form">
+        <div>
+            <form onsubmit="addMedicine()">
+                <label for="fname">Nome do Medicamento *</label>
+                <input type="text" placeholder="Bonpragrip"name="medName" id="fname">
+
+                <label for="fqtd">Quantidade Disponível *</label>
+                <input type="number" placeholder="100" name="medQtd" id="fqtd">
+
+                <label for="fclass">Classe de Medicamento *</label>
+                <input type="text" placeholder="Antibiótico" name="medClass" id="fclass"
+                    style="margin-bottom: 3rem;">
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+
+        <div>
+            <table id="dataTable">
+                <thead>
+                    <th>ID</th>
+                    <th>Medicamento</th>
+                    <th>Quantidade</th>
+                    <th>Classe de Medicamento</th>
+                    <th id="remove">Remover</th>
+                </thead>
+                
+
+            </table>
+        </div>
 
 
+    </section>
+
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background: rgba(240, 196, 230, 0.26);
+}
+
 nav {
   background: #76bebe;
   display: grid;
@@ -20,6 +24,7 @@ nav {
 }
 
 .store-header {
+  background: #ffffff;
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
@@ -39,9 +44,98 @@ nav {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 25px;
 }
 
-main {
-    background: rgba(240, 196, 230, 0.26);
+section {
+  margin-top: 2rem;
+  font-family: 'Alegreya Sans SC';
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+
+  margin: 7rem 5rem;
+}
+
+form {
+  display: grid;
+  grid-auto-flow: row;
+  width: 45rem;
+}
+
+label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+
+  color: #000000;
+}
+
+input {
+  font-family: 'Alegreya Sans SC';
+  background: rgba(255, 255, 255, 0.57);
+  border-radius: 10px;
+  padding-left: 1rem;
+  font-size: 18px;
+  height: 50px;
+
+  border: 0;
+  margin-bottom: 2rem;
+}
+
+button {
+  font-family: 'Raleway';
+  background: #76bebe;
+  border-radius: 10px;
+  border: 0;
+  height: 45px;
+  width: 15rem;
+  margin: 0 auto;
+  cursor: pointer;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+button:hover {
+  background: #4ca1a1;
+}
+
+table {
+  margin-top: 1.5rem;
+  border-collapse: collapse;
+}
+
+th {
+  background: #3e3d3d;
+  border: 1px solid #767373;
+  min-width: 10rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 0 2rem;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+#remove {
+  background: rgba(62, 61, 61, 0.75);
+  border: 1px solid #767373;
+}
+
+td {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.57);
+  border: 1px solid #767373;
+  margin: 0;
+}
+
+td img{
+    margin-top: 5px;
+    cursor: pointer;
 }
